@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "General Sans", sans-serif;
+}
+
+body {
+  color: white;
+}
+
+.section {
+  padding: 1.25rem 1.5rem;
+}
+
+.bounding {
+  width: fit-content;
+  overflow: hidden;
+}
+
+.bounding .boundingelem {
+  transform: translateY(100%);
+}
+
+#minicircle {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 9999;
+  border-radius: 50%;
+  background-color: white;
+  transform: translate(50%, 50%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#main {
+  height: 100%;
+  background-color: black;
+}
+
+#hero {
+  min-height: 100vh;
+  background-color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero nav a {
+  font-weight: bold;
+  color: inherit;
+}
+
+#hero nav h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+#hero .heading {
+  width: fit-content;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero .heading h1 {
+  font-size: 10vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 0.8;
+  opacity: 0.6;
+}
+
+#hero .heading .bounding:nth-child(2) h1 {
+  margin-left: 6.3rem;
+}
+
+#hero .heading .bounding:nth-child(3) {
+  align-self: flex-end;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+#hero .subheading {
+  padding-inline: 1.5rem;
+  margin-top: 7.22vw;
+  text-align: end;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  align-self: flex-end;
+}
+
+#hero .subheading p:nth-child(2) {
+  margin-top: 0.3rem;
+}
+
+#hero .herofooter {
+  position: absolute;
+  bottom: 0;
+  padding: 1.25rem 1.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+#hero .herofooter p {
+  font-weight: 500;
+}
+
+#hero .herofooter p i {
+  font-size: 0.7rem;
+  margin-left: 0.3rem;
+}
+
+#hero .herofooter .circle-container {
+  text-align: end;
+  display: flex;
+  justify-content: end;
+  gap: 0.3rem;
+}
+
+#hero .herofooter .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #888;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  color: black;
+  cursor: pointer;
+}
+
+#songs {
+  background-color: black;
+  padding: 10rem 1.5rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#songs .song-container {
+  max-width: 86.52vw;
+}
+
+#songs .song {
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  padding-block: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#songs .song img {
+  opacity: 0;
+  pointer-events: none;
+  height: 140%;
+  z-index: 999;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#songs h1 {
+  font-size: 7.6vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #888;
+}
+
+#about {
+  background-color: black;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1.5rem;
+  padding-right: 8.53vw;
+  padding-bottom: 5rem;
+}
+
+#about img {
+  height: 200px;
+}
+
+#about .text {
+  max-width: 400px;
+}
+
+#about .text span {
+  display: block;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+#about button {
+  margin-top: 1rem;
+  background-color: black;
+  border: none;
+  border: 1px solid white;
+  color: white;
+  padding: 0.3em 1em;
+  border-radius: 999px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+#about button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+#subscribe {
+  background-color: black;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+#subscribe span {
+  opacity: 0.7;
+}
+
+#subscribe p {
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+.footer {
+  background-color: black;
+  padding: 5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+.footer .left {
+  display: flex;
+  gap: 4rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.footer .right ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.footer .right ul a {
+  color: white;
+}
